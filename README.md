@@ -19,29 +19,9 @@ After getting familiar with more and more dotfiles, I also thought I should use 
         - Bottom right - <kbd>⌘ Command</kbd> + <kbd>⌥ Option</kbd> + <kbd>⌃ Control</kbd> + <kbd>k</kdb>
     - Hold to quit any app - <kbd>⌘ Command</kbd> + <kbd>q</kbd>
 - **Neovim**
-    - Package manager: [packer.nvim](https://github.com/wbthomason/packer.nvim)
-    - Auto-completion 
-        - Completion sources: [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-        - Vscode-like pictograms: [lspkind.nvim](https://github.com/onsails/lspkind.nvim)
-        - LSP support:
-            - [mason.nvim](https://github.com/williamboman/mason.nvim)
-            - [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
-            - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
-            - [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)
-            - [mason-null-ls.nvim](https://github.com/jay-babu/mason-null-ls.nvim)
-    - Code snippet engine: [Luasnip](https://github.com/L3MON4D3/LuaSnip)
-    - Colorscheme: [monokai](https://github.com/tanvirtin/monokai.nvim)
+    - Package manager: [vim-plug](https://github.com/junegunn/vim-plug)
     - Git integration: [vim-fugitive](https://github.com/tpope/vim-fugitive)
-    - Git dcorations: [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-    - Code comment helper: [vim-commentary](https://github.com/tpope/vim-commentary)
-    - Markdown tools:
-        - Markdown: [vim-markdown](https://github.com/preservim/vim-markdown)
-        - Markdown previewer: [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
-    - PEP8 style indentation in Python: [vim-python-pep8-indent](https://github.com/Vimjas/vim-python-pep8-indent)
-    - File explorer: [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
-    - Identation indicator: [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
-    - Status line: [lualin.nvim](https://github.com/nvim-lualine/lualine.nvim)
-    - Better terminal support: [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
-    - Treesitter integration: [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-    - Autopairs: [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
-    - Easy motion: [hop.nvim](https://github.com/phaazon/hop.nvim)
+    - File explorer: [NERDTree](https://github.com/preservim/nerdtree)
+    - Fuzzy finder: [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+    - Surround editing: [vim-surround](https://github.com/tpope/vim-surround)
+    - Alignment helper: [vim-easy-align](https://github.com/junegunn/vim-easy-align)

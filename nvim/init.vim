@@ -61,8 +61,24 @@ Plug 'junegunn/vim-easy-align'
 Plug 'Chiel92/vim-autoformat'
 Plug 'tpope/vim-fugitive'
 Plug 'raimondi/delimitmate'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
+
+" Telescope：文件、文本、buffer、帮助搜索
+lua << EOF
+local ok, telescope = pcall(require, 'telescope')
+if ok then
+  telescope.setup({})
+end
+EOF
+
+nnoremap <C-p> :Telescope find_files<CR>
+nnoremap <leader>ff :Telescope find_files<CR>
+nnoremap <leader>fg :Telescope live_grep<CR>
+nnoremap <leader>fb :Telescope buffers<CR>
+nnoremap <leader>fh :Telescope help_tags<CR>
 
 " NERDTree：保留 tree 习惯
 map <C-n> :NERDTreeToggle<CR>
