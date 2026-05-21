@@ -20,6 +20,7 @@ After getting familiar with more and more dotfiles, I also thought I should use 
     - Hold to quit any app - <kbd>⌘ Command</kbd> + <kbd>q</kbd>
 - **Neovim**
     - Package manager: [vim-plug](https://github.com/junegunn/vim-plug)
+    - Colorscheme: [vscode.nvim](https://github.com/Mofiqul/vscode.nvim)
     - Git integration: [vim-fugitive](https://github.com/tpope/vim-fugitive)
     - File explorer: [NERDTree](https://github.com/preservim/nerdtree)
     - Fuzzy finder: [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)

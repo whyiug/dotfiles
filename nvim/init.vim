@@ -43,17 +43,10 @@ set clipboard=unnamed
 autocmd FileType php,python,c,cpp,java,perl,sh,bash,vim,ruby,go setlocal tabstop=4 shiftwidth=4 softtabstop=4
 autocmd FileType javascript,typescript,html,css,xml,json,yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
-" 主题：优先 molokai，没有就 fallback
-try
-  colorscheme molokai
-  let g:molokai_original = 1
-catch
-  colorscheme default
-endtry
-
 " 插件：建议用 vim-plug，保留你真实还会用到的
 call plug#begin(stdpath('data') . '/plugged')
 
+Plug 'Mofiqul/vscode.nvim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'preservim/nerdtree'
@@ -65,6 +58,17 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
+
+" 主题：VS Code Dark+ 风格，保留 Ghostty 的蓝黑终端背景
+set termguicolors
+let g:vscode_style = 'dark'
+let g:vscode_transparency = 1
+
+try
+  colorscheme vscode
+catch
+  colorscheme default
+endtry
 
 " Telescope：文件、文本、buffer、帮助搜索
 lua << EOF
