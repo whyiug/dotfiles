@@ -37,7 +37,7 @@ set foldmethod=indent
 set foldlevelstart=99
 
 " macOS 剪贴板
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " 文件类型缩进
 autocmd FileType php,python,c,cpp,java,perl,sh,bash,vim,ruby,go setlocal tabstop=4 shiftwidth=4 softtabstop=4
@@ -78,11 +78,9 @@ if ok then
 end
 EOF
 
-nnoremap <D-C-p> :Telescope find_files<CR>
 nnoremap <C-p> :Telescope find_files<CR>
 nnoremap <leader>ff :Telescope find_files<CR>
-nnoremap <D-C-f> :Telescope live_grep<CR>
-nnoremap <C-f> :Telescope live_grep<CR>
+nnoremap <leader>fg :Telescope live_grep<CR>
 nnoremap <leader>fb :Telescope buffers<CR>
 nnoremap <leader>fh :Telescope help_tags<CR>
 
