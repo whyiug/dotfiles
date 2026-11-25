@@ -39,6 +39,9 @@ set foldlevelstart=99
 " macOS 剪贴板
 set clipboard=unnamedplus
 
+" Copy a Visual selection when the terminal forwards Cmd+C.
+xnoremap <silent> <D-c> "+y
+
 " 文件类型缩进
 autocmd FileType php,python,c,cpp,java,perl,sh,bash,vim,ruby,go setlocal tabstop=4 shiftwidth=4 softtabstop=4
 autocmd FileType javascript,typescript,html,css,xml,json,yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2
